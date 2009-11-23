@@ -6,6 +6,5 @@ get '/' do
 end
 
 get '/whois/:domain' do |domain|
-  whois_results = %x{ whois #{domain} }
-  whois_results.gsub("\n", "<br />")
+  %x{ whois #{domain} }.gsub("\n", "<br />")
 end
