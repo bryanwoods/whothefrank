@@ -2,7 +2,7 @@ require 'rubygems'
 require 'sinatra'
 
 get '/' do
-  "Try this: <a href='http://www.whothefrank.com/whois/cheapramen.com' + 
+  "Try this: <a href='http://www.whothefrank.com/whois/cheapramen.com'> + 
     http://www.whothefrank.com/whois/cheapramen.com</a>"
 end
 
