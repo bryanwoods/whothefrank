@@ -1,9 +1,9 @@
 require 'rubygems'
 require 'sinatra'
+require 'haml'
 
 get '/' do
-  "Try this: <a href='http://www.whothefrank.com/lookup/cheapramen.com'>" + 
-    "http://www.whothefrank.com/lookup/cheapramen.com</a>"
+  haml(:index)
 end
 
 get '/lookup/:domain' do |domain|
