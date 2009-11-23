@@ -7,5 +7,6 @@ get '/' do
 end
 
 get '/lookup/:domain' do |domain|
-  %x{ whois #{domain} }.gsub("\n", "<br />")
+  @whois_result = %x{ whois #{domain} }.gsub("\n", "<br />")
+  haml(:result)
 end
