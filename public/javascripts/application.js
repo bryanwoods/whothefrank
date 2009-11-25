@@ -1,3 +1,4 @@
 $(document).ready(function() {
-  $("#results").hide();
+  $("#whois_result").hide();
+  $("#whois_result").slideDown("slow");
 });
