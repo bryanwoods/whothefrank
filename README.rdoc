@@ -2,6 +2,10 @@
 
 WhoTheFrank is an absolutely tiny, lightweight, and fast web-based WHOIS search built on Sinatra.
 
+== WHERE THE F**K IS WHO THE FRANK?
+
+Why it can be found at http://www.whothefrank.com
+
 == WHY THE F**K IS WHO THE FRANK?
 
 I'm a domain junkie, and I end up running a lot of WHOIS searches. 
