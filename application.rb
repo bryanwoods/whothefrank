@@ -4,11 +4,11 @@ require 'environment'
 include ApplicationHelpers
 
 get '/' do
-  haml(:index)
+  haml(:index, :format => :html5)
 end
 
 get '/lookup/:domain' do |domain|
   @domain = domain.capitalize
   @whois_result = %x{ whois #{domain} }.gsub("\n", "<br />")
-  haml(:result)
+  haml(:result, :format => :html5)
 end
