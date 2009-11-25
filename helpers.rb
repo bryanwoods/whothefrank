@@ -8,7 +8,7 @@ module ApplicationHelpers
       "http://localhost:4567"
     end
   end
-  
+
   def example_url
     self.site_url.to_s + "lookup/whothefrank.com"
   end
