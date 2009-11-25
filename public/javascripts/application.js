@@ -1,4 +1,4 @@
 $(document).ready(function() {
-  $("#whois_result").hide();
-  $("#whois_result").slideDown("slow");
+  $("#example_link").hide().fadeIn("slow");
+  $("#whois_result").hide().slideDown("slow");
 });
