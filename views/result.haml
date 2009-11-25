@@ -1,2 +1,7 @@
 %h5
-  = @whois_result
+  #results
+    = @whois_result
+:javascript
+  $(document).ready(function() {
+    $("#results").slideDown("slow");
+  });
