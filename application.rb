@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'sinatra'
-require 'haml'
+require 'environment'
+include ApplicationHelpers
 
 get '/' do
   haml(:index)
