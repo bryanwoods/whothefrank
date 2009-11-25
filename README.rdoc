@@ -21,7 +21,7 @@ I realized this is one of those perfect times when if I'm going to have to use s
 
 == MISCELLANY
 
-WhoTheFrank has grown a bit already, and will likely be tweaked into oblivion. However, it started out with this line of code, written to amuse myself and my kittens over a ham sandwich with mustard:
+WhoTheFrank has grown a bit already, and will likely be tweaked into oblivion. However, it started out with this line of code, written to amuse myself and my kittens over a ham sandwich with mustard (they had cat food):
 
   require'rubygems';require'sinatra';get'/'do;"Try\sthis:\s/whois/bryanwoods4e.com";end;get'/whois/:domain'do|domain|;%x{whois\s#{domain}}.gsub("\n","<br/>");end
 
