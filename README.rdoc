@@ -8,9 +8,21 @@ I'm a domain junkie, and I end up running a lot of WHOIS searches.
 For some reason I tend to use web apps for my searching instead of the convenient command line.
 I assume this is because if I'm looking up clever domain names, I'm already procrastinating and closer to Google than a terminal.
 
-Have you ever googled for a WHOIS lookup? It's a joke.
+Have you ever Googled for a WHOIS lookup? It's a joke.
 http://www.google.com/search?hl=en&source=hp&q=whois+lookup&aq=0&oq=whois&aqi=g10
 
 I realized this is one of those perfect times when if I'm going to have to use shitty, boring software, it might as well be shitty, boring software that I built.
 
 ...And it had better run on Sinatra.
+
+== MISCELLANY
+
+WhoTheFrank has grown a bit already, and will likely be tweaked into oblivion. However, it started out with this line of code, written to amuse myself and my kittens over a ham sandwich with mustard:
+
+require'rubygems';require'sinatra';get'/'do;"Try\sthis:\s/whois/bryanwoods4e.com";end;get'/whois/:domain'do|domain|;%x{whois\s#{domain}}.gsub("\n","<br/>");end
+
+That's still pretty much it. I'll probably work on making the results more pleasing to the eye, as that's something the other shitty, boring WHOIS tools lack.
+
+== ALSO
+
+I've always wanted to write a README longer than the entire source of the application it describes.
