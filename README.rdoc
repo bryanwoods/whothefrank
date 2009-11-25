@@ -1,0 +1,16 @@
+== WHAT THE F**K IS WHO THE FRANK?
+
+WhoTheFrank is an absolutely tiny, lightweight, and fast web-based WHOIS search built on Sinatra.
+
+== WHY THE F**K IS WHO THE FRANK?
+
+I'm a domain junkie, and I end up running a lot of WHOIS searches. 
+For some reason I tend to use web apps for my searching instead of the convenient command line.
+I assume this is because if I'm looking up clever domain names, I'm already procrastinating and closer to Google than a terminal.
+
+Have you ever googled for a WHOIS lookup? It's a joke.
+http://www.google.com/search?hl=en&source=hp&q=whois+lookup&aq=0&oq=whois&aqi=g10
+
+I realized this is one of those perfect times when if I'm going to have to use shitty, boring software, it might as well be shitty, boring software that I built.
+
+...And it had better run on Sinatra.
