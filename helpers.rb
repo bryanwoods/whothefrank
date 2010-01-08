@@ -10,14 +10,14 @@ module ApplicationHelpers
   end
 
   def whois_example_url
-    self.site_url.to_s + "whois/whothefrank.com"
+    site_url.to_s + "whois/whothefrank.com"
   end
 
   def nslookup_example_url
-    self.site_url.to_s + "nslookup/whothefrank.com"
+    site_url.to_s + "nslookup/whothefrank.com"
   end
 
   def dig_example_url
-    self.site_url.to_s + "dig/whothefrank.com"
+    site_url.to_s + "dig/whothefrank.com"
   end
 end
