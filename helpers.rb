@@ -9,8 +9,15 @@ module ApplicationHelpers
     end
   end
 
-  def example_url
-    self.site_url.to_s + "lookup/whothefrank.com"
+  def whois_example_url
+    self.site_url.to_s + "whois/whothefrank.com"
   end
-  
+
+  def nslookup_example_url
+    self.site_url.to_s + "nslookup/whothefrank.com"
+  end
+
+  def dig_example_url
+    self.site_url.to_s + "dig/whothefrank.com"
+  end
 end

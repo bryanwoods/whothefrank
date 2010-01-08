@@ -8,9 +8,23 @@ get '/' do
   haml(:index, :format => :html5)
 end
 
-get '/lookup/:domain' do |domain|
+get '/whois/:domain' do |domain|
   response.headers['Cache-Control'] = 'public, max-age=1000'
   @domain = domain.capitalize
-  @whois_result = %x{ whois #{domain} }.gsub("\n", "<br />\n")
+  @result = %x{ whois #{domain} }.gsub("\n", "<br />\n")
+  haml(:result, :format => :html5)
+end
+
+get '/dig/:domain' do |domain|
+  response.headers['Cache-Control'] = 'public, max-age=1000'
+  @domain = domain.capitalize
+  @result = %x{ dig #{domain} }.gsub("\n", "<br />\n")
+  haml(:result, :format => :html5)
+end
+
+get '/nslookup/:domain' do |domain|
+  response.headers['Cache-Control'] = 'public, max-age=1000'
+  @domain = domain.capitalize
+  @result = %x{ nslookup #{domain} }.gsub("\n", "<br />\n")
   haml(:result, :format => :html5)
 end
