@@ -1,23 +1,13 @@
 module ApplicationHelpers
-
-  def site_url
-    case Sinatra::Application.environment
-    when "production":
-      "http://whothefrank.com"
-    when "development":
-      "http://localhost:4567"
-    end
-  end
-
   def whois_example_url
-    site_url.to_s + "whois/whothefrank.com"
+    "/whois/whothefrank.com"
   end
 
   def nslookup_example_url
-    site_url.to_s + "nslookup/whothefrank.com"
+    "/nslookup/whothefrank.com"
   end
 
   def dig_example_url
-    site_url.to_s + "dig/whothefrank.com"
+    "/dig/whothefrank.com"
   end
 end
