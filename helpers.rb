@@ -3,7 +3,7 @@ module ApplicationHelpers
   def site_url
     case Sinatra::Application.environment
     when "production":
-      "http://www.whothefrank.com"
+      "http://whothefrank.com"
     when "development":
       "http://localhost:4567"
     end
