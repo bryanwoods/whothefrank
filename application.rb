@@ -22,6 +22,13 @@ get '/dig/:domain' do |domain|
   haml(:result, :format => :html5)
 end
 
+get '/head/:domain' do |domain|
+  response.headers['Cache-Control'] = 'public, max-age=1000'
+  @domain = domain.capitalize
+  @result = %x{ curl -I #{domain} }.gsub("\n", "<br />\n")
+  haml(:result, :format => :html5)
+end
+
 get '/nslookup/:domain' do |domain|
   response.headers['Cache-Control'] = 'public, max-age=1000'
   @domain = domain.capitalize

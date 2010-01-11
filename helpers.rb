@@ -10,4 +10,8 @@ module ApplicationHelpers
   def dig_example_url
     "/dig/whothefrank.com"
   end
+
+  def head_example_url
+    "/head/whothefrank.com"
+  end
 end
