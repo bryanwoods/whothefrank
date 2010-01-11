@@ -4,7 +4,7 @@ WhoTheFrank is an absolutely tiny, lightweight, and fast web-based WHOIS search 
 
 == WHERE THE F**K IS WHO THE FRANK?
 
-Why it can be found at http://www.whothefrank.com
+Why it can be found at http://whothefrank.com
 
 == WHY THE F**K IS WHO THE FRANK?
 
