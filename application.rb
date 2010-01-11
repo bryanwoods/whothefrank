@@ -35,3 +35,10 @@ get '/nslookup/:domain' do |domain|
   @result = %x{ nslookup #{domain} }.gsub("\n", "<br />\n")
   haml(:result, :format => :html5)
 end
+
+get '/curl/:domain' do |domain|
+  response.headers['Cache-Control'] = 'public, max-age=1000'
+  @domain = domain.capitalize
+  @result = %x{ curl #{domain} }.gsub("\n", "<br />\n")
+  haml(:curl, :format => :html5)
+end

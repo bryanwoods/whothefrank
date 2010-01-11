@@ -14,4 +14,8 @@ module ApplicationHelpers
   def head_example_url
     "/head/whothefrank.com"
   end
+
+  def curl_example_url
+    "/curl/whothefrank.com"
+  end
 end
